@@ -13,7 +13,7 @@ public class FullSingle {
     private static FullSingle f;
 
     public FullSingle getF(){
-        synchronized (this){
+        synchronized (FullSingle.class){
             if (f==null){
                 return new FullSingle();
             }
